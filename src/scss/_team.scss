@@ -1,11 +1,9 @@
 .team {
     
-    &__holder {
-    border-radius: 12px;
-    // overflow: hidden;
-    margin-bottom: 40px;
-    background: $gray-bg-color;
-    }
+    // &__holder {
+    // border-radius: 12px;
+ 
+    // }
     &__title {
         @include text-gradient;
         font-size: 30px;
@@ -30,6 +28,10 @@
         }
     }
     &__textbox {
+        border-radius: 12px;
+        margin-bottom: 40px;
+        background: $gray-bg-color;
+        overflow: hidden;
         @media screen and (min-width: 1024px){
             display: flex;
         }

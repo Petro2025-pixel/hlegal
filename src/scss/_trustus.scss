@@ -1,0 +1,86 @@
+.trust-us {
+    max-width: 1720px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    &__title {
+            position: absolute;
+            left: calc(50% - 100px);
+            top: 20px;
+            text-transform: uppercase;
+    
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+                color: $main-regular-color ;
+            }
+            
+        }
+
+     &__wrapper{
+        margin-top: 55px;
+        & ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+                @media screen and (min-width: 1720px) {
+                        border-radius: 12px;
+                        overflow: hidden;
+                    }
+             }
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 120px;
+                @media screen and (min-width: 375px) {
+                width: 100%;
+                 }
+                @media screen and (min-width: 768px) {
+                width: 33.33%;
+                }
+                @media screen and (min-width: 1024px) {
+                width: 25%;
+                }  
+            }
+            & li:nth-child(1){
+                background-color: #1C4280; 
+            }
+            & li:nth-child(2) {
+                background-color:  #143646;
+            }
+            & li:nth-child(3) {
+                background-color:  #F48B30;
+            }
+            & li:nth-child(4) {
+                background-color:  #9E4DC3;
+            }
+            & li:nth-child(5) {
+                background-color: #FD9339;
+            }
+            & li:nth-child(6) {
+                background-color: #E2E2E4;
+            }
+            & li:nth-child(7) {
+                background-color: #C71C36;
+            }
+            & li:nth-child(8) {
+                background-color: #DCF3F9;
+            }
+            & li:nth-child(9) {
+                background-color: #EAEAEA;
+            }
+            & li:nth-child(10) {
+                background-color: #282240;
+            }
+            & li:nth-child(11) {
+                background-color: #1D4568;
+            }
+            & li:nth-child(12) {
+                background-color: #000000;
+            }
+     }
+ }
