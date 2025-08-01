@@ -1,0 +1,54 @@
+.team {
+    
+    &__holder {
+    border-radius: 12px;
+    // overflow: hidden;
+    margin-bottom: 40px;
+    background: $gray-bg-color;
+    }
+    &__title {
+        @include text-gradient;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+    &__text p{
+        padding-bottom: 10px;
+    }
+
+    &__img {
+        height: 500px;
+
+        @media screen and (min-width: 1024px) {
+                width: 400px;
+                flex-shrink: 0;
+            }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__textbox {
+        @media screen and (min-width: 1024px){
+            display: flex;
+        }
+    }
+    &__text {
+        padding: 30px;
+        & a{
+        text-decoration: none;
+        }
+        & a:hover {
+        color: $accent-color;
+        transition: color 0.3s ease;
+        }   
+
+        @media screen and (min-width: 1024px) {
+                flex-grow: 1;
+            }
+    }
+    &__text a>span{
+        text-transform: uppercase;
+        }
+}
