@@ -1,13 +1,14 @@
-.about{
-    @media screen and (min-width: 1024px) {
-       padding-top: 80px;
-    }}
+// .about{
+//     @media screen and (min-width: 1024px) {
+//        padding-top: 80px;
+//     }}
 .before-pictures{
     max-width: 1630px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
     flex-wrap: wrap;
+    // border: 1px solid red;
 
     @media screen and (min-width: 375px) {
     flex-direction: column;
@@ -257,12 +258,15 @@
     }
 
 }
+.achievments-wrapper{
+    background-color: $gray-bg-color;
+}
 .achievments{
     max-width: 1630px;
     display: flex;
     margin: 0 auto;
     justify-content: center ;
-    background-color: $gray-bg-color;
+    
     padding: 60px 100px 60px 100px;
     position: relative;
     @media screen and (min-width: 768px) {

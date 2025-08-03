@@ -9,3 +9,18 @@
   background-clip: text;
   color: transparent;
 }
+
+@mixin flex-spasing($columnCount, $gap) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+
+  >div {
+    width: calc((100% - (#{$columnCount} - 1) * #{$gap}) / #{$columnCount});
+  }
+}
+
+
+// .parent {
+//   @include flex-spasing(5, 20px);
+// }

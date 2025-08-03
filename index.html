@@ -10,13 +10,16 @@
     <div class="wrapper">
       <!-- fff -->
       <!-- header -->
-      <header class="header">
+      <header class="header header__dark">
         <div class="container header__container minimum-transformed">
           <strong class="header__logo">
-            <img src="/src/img/logo-hlegal.svg" alt="logo-hlegal" />
-            <span class="header__page-active">about us</span>
+            <!-- for dark header -->
+            <img src="/src/img/logo-hlegal-white.svg" alt="logo-hlegal-white" />
+            <!-- for dark header -->
+
+            <span class="header__page-active-dark hidden">about us</span>
           </strong>
-          <ul class="header__topline">
+          <ul class="header__topline-dark">
             <li>
               <ul class="langs">
                 <li><a href="">УК</a></li>
@@ -50,17 +53,17 @@
               <span class="nav__icon-close">
                 <img src="/src/img/close.svg" alt="close" />
               </span>
-              <ul class="nav__menu">
-                <li class="active"><a href="/about-us.html">about us</a></li>
-                <li><a href="">services</a></li>
+              <ul class="nav__menu-dark">
+                <li><a href="about-us.html">about us</a></li>
+                <li><a href="services.html">services</a></li>
                 <li><a href="">team</a></li>
                 <li><a href="">publications</a></li>
                 <li><a href="">contact</a></li>
               </ul>
             </div>
 
-            <span class="nav__icon">
-              <img src="/src/img/hamburger.svg" alt="hamburger" />
+            <span class="nav__icon icon-dark">
+              <img src="/src/img/hamburger-light.svg" alt="hamburger-light" />
             </span>
           </nav>
         </div>
@@ -68,12 +71,14 @@
       <!-- header -->
 
       <main>
-        <div class="main-holder bg-gradient">
+        <!-- intro start -->
+        <div class="bg-gradient">
           <div class="container">
             <section class="intro">
               <h1 class="intro__title">you legal solutions provider</h1>
               <a href="#anchor" class="intro__btn"></a>
             </section>
+            <!-- intro end -->
 
             <!-- tabs start -->
             <section class="tabs" id="anchor">
@@ -133,18 +138,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/ecommerce.svg" alt="ecommerce" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-ecommerce"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""><h3>IT and e-commerce</h3></a>
                     <p>
@@ -157,18 +150,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/support.svg" alt="support" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-support"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""><h3>Comprehensive daily legal support</h3></a>
                     <p>
@@ -183,18 +164,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/coprorate.svg" alt="coprorate" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-coprorate"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""><h3>Structuring corporate relationships</h3></a>
                     <p>
@@ -206,18 +175,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/trust.svg" alt="trust" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-trust"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""><h3>Building contractual relations</h3></a>
                     <p>
@@ -230,18 +187,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/protection.svg" alt="protection" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-protection"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""
                       ><h3>Protection of business, intellectual property</h3></a
@@ -256,18 +201,6 @@
                   <li>
                     <div class="services__set-box">
                       <img src="/src/img/court.svg" alt="court" />
-                      <!-- <svg
-                        class="social-icon"
-                        viewBox="0 0 64 64"
-                        width="64"
-                        height="64"
-                      >
-                        <use
-                          href="/src/img/icons-set.svg#icon-court"
-                          x="0"
-                          y="0"
-                        ></use>
-                      </svg> -->
                     </div>
                     <a href=""><h3>Judicial representation</h3></a>
                     <p>
@@ -349,6 +282,68 @@
                     <p><span class="team__position">Associate</span></p>
                   </div>
                 </div>
+
+                <div class="swiper-slide team__textbox">
+                  <div class="team__img">
+                    <img src="/src/img/team-04.jpg" alt="team-04" />
+                  </div>
+                  <div class="team__text">
+                    <a href="" class="team__cat-link cat-link"
+                      ><span>команда &#62;</span></a
+                    >
+                    <h2 class="team__title">
+                      We are used to taking responsibility and always guarantee
+                      honest, timely assistance, even in situations where most
+                      are powerless.
+                    </h2>
+                    <p><span class="team__name">Sergey Binn</span></p>
+                    <p><span class="team__position">Associate</span></p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide team__textbox">
+                  <div class="team__img">
+                    <img src="/src/img/team-05.jpg" alt="team-05" />
+                  </div>
+                  <div class="team__text">
+                    <a href="" class="team__cat-link cat-link"
+                      ><span>команда &#62;</span></a
+                    >
+                    <h2 class="team__title">
+                      Ми звикли брати на себе відповідальність та завжди
+                      гарантуємо чесну, вчасну допомогу, навіть у ситуаціях,
+                      коли більшість безсилі.
+                    </h2>
+                    <p><span class="team__name">Oksana Kobzar</span></p>
+                    <p>
+                      <span class="team__position"
+                        >Equity partner, Attorney-at-law</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide team__textbox">
+                  <div class="team__img">
+                    <img src="/src/img/team-06.jpg" alt="team-06" />
+                  </div>
+                  <div class="team__text">
+                    <a href="" class="team__cat-link cat-link"
+                      ><span>команда &#62;</span></a
+                    >
+                    <h2 class="team__title">
+                      We are used to taking responsibility and always guarantee
+                      honest, timely assistance, even in situations where most
+                      are powerless.
+                    </h2>
+                    <p><span class="team__name">Julia Wolk</span></p>
+                    <p>
+                      <span class="team__position"
+                        >Associate, Attorney-at-law</span
+                      >
+                    </p>
+                  </div>
+                </div>
+
                 ...
               </div>
               <!-- If we need pagination -->
@@ -363,143 +358,204 @@
           <div class="trust-us__title">
             <h3>They already trust us</h3>
           </div>
-          <div class="trust-us__wrapper">
-            <ul>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/hillel.svg" alt="hillel" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/wannabiz.svg" alt="wannabiz" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/tapgerine.svg" alt="tapgerine" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/3dlook.svg" alt="3dlook" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/orangear.svg" alt="orangear" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/adtelligent.svg" alt="adtelligent" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/clickky.svg" alt="clickky" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/eco-leasing.svg" alt="eco-leasing" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/ingratek.svg" alt="ingratek" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/city-par.svg" alt="city-park" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/artprint.svg" alt="artprint" />
-                </div>
-              </li>
-              <li>
-                <div class="trust-us__img">
-                  <img src="/src/img/ultimatecard.svg" alt="ultimatecard" />
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="trust-us__list">
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/hillel.svg" alt="hillel"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/wannabiz.svg" alt="wannabiz"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/tapgerine.svg" alt="tapgerine"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/3dlook.svg" alt="3dlook"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/orangear.svg" alt="orangear"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/adtelligent.svg" alt="adtelligent"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/clickky.svg" alt="clickky"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/eco-leasing.svg" alt="eco-leasing"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/ingratek.svg" alt="ingratek"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/city-par.svg" alt="city-park"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank"
+                ><img src="/src/img/artprint.svg" alt="artprint"
+              /></a>
+            </li>
+            <li class="trust-us__img">
+              <a href="" class="trust-us__link" target="_blank">
+                <img src="/src/img/ultimatecard.svg" alt="ultimatecard"
+              /></a>
+            </li>
+          </ul>
         </section>
         <!-- trust us end -->
+
+        <!-- pudlications start -->
+        <section class="publications-wrapper">
+          <div class="publications">
+            <div class="title">
+              <a href="" class="title__link"><span>Publications &#62;</span></a>
+              <h4 class="title__text">We have something to tell</h4>
+            </div>
+            <div class="publications__wrapper">
+              <div class="publications__box">
+                <div class="publications__wrapper-img">
+                  <img src="/src/img/publication-1.jpg" alt="" />
+                </div>
+                <div class="publications__wrapper-txt">
+                  <a href=""><h4>Equity associate</h4></a>
+                  <span>April 22</span>
+                  <p>
+                    I'm a jun on projects. I am a co-owner of a law firm. How it
+                    happened. Before entering my parents told me that if I…
+                  </p>
+                </div>
+              </div>
+              <div class="publications__box">
+                <div class="publications__wrapper-img">
+                  <img src="/src/img/publication-2.jpg" alt="" />
+                </div>
+                <div class="publications__wrapper-txt">
+                  <a href=""
+                    ><h4>
+                      Penalty for the Good Corporation: what will happen to
+                      Google and others for violating the GDPR
+                    </h4></a
+                  >
+
+                  <span>September 29</span>
+                  <p>
+                    And why the recovery of 50 million euros could be a fateful
+                    precedent According to Mind.ua January 21 National
+                    Commission for Data Protection.
+                  </p>
+                </div>
+              </div>
+              <div class="publications__box">
+                <div class="publications__wrapper-img">
+                  <img src="/src/img/publication-3.jpg" alt="" />
+                </div>
+                <div class="publications__wrapper-txt">
+                  <a href=""><h4>Millennial Testament</h4></a>
+
+                  <span>August 19</span>
+                  <p>
+                    What and how modern vloggers, opinion leaders and
+                    crypto-millionaires will inherit A typical legacy of the
+                    Ukrainian generation X looks like this: an apartment in…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- pudlications end -->
       </main>
 
       <!-- footer -->
-      <footer class="container main-foot">
-        <div class="address-foot">
-          <ul class="gorizontal-list">
-            <li>
-              <address>Kyiv, Mechnikova str, 14/1</address>
-            </li>
-            <li>
-              <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
-                <use
-                  href="/src/img/icons-set.svg#icon-ellipse"
-                  x="0"
-                  y="0"
-                ></use>
-              </svg>
-            </li>
-            <li>
-              <a href="" target="_blank"><span>on map</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="facebook-foot">
-          <ul class="gorizontal-list">
-            <li>
-              <a href="" target="_blank">
-                <svg
-                  class="social-icon"
-                  viewBox="0 0 20 20"
-                  width="20"
-                  height="20"
-                >
+      <footer class="main-foot background-color-max">
+        <div class="container-foot">
+          <div class="address-foot">
+            <ul class="gorizontal-list">
+              <li>
+                <address>Kyiv, Mechnikova str, 14/1</address>
+              </li>
+              <li>
+                <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
                   <use
-                    href="/src/img/icons-set.svg#icon-logo-facebook-header"
+                    href="/src/img/icons-set.svg#icon-ellipse"
                     x="0"
                     y="0"
                   ></use>
                 </svg>
-              </a>
-            </li>
-            <li>
-              <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
-                <use
-                  href="/src/img/icons-set.svg#icon-ellipse"
-                  x="0"
-                  y="0"
-                ></use>
-              </svg>
-            </li>
-            <li><a href="tel:0800211927">0800 211 927</a></li>
-            <li>
-              <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
-                <use
-                  href="/src/img/icons-set.svg#icon-ellipse"
-                  x="0"
-                  y="0"
-                ></use>
-              </svg>
-            </li>
-            <li>
-              <address>
-                <a href="mailto:contact@forstudy.space">
-                  <p>contact@forstudy.space</p></a
-                >
-              </address>
-            </li>
-          </ul>
-        </div>
-        <div class="copy-right">
-          <span>&copy; 2021 HLEGAL Law company, LLC</span>
+              </li>
+              <li>
+                <a href="" target="_blank"><span>on map</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="facebook-foot">
+            <ul class="gorizontal-list">
+              <li>
+                <a href="" target="_blank">
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 20 20"
+                    width="20"
+                    height="20"
+                  >
+                    <use
+                      href="/src/img/icons-set.svg#icon-logo-facebook-header"
+                      x="0"
+                      y="0"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
+                  <use
+                    href="/src/img/icons-set.svg#icon-ellipse"
+                    x="0"
+                    y="0"
+                  ></use>
+                </svg>
+              </li>
+              <li><a href="tel:0800211927">0800 211 927</a></li>
+              <li>
+                <svg class="social-icon" viewBox="0 0 6 6" width="6" height="6">
+                  <use
+                    href="/src/img/icons-set.svg#icon-ellipse"
+                    x="0"
+                    y="0"
+                  ></use>
+                </svg>
+              </li>
+              <li>
+                <address>
+                  <a href="mailto:contact@forstudy.space">
+                    <p>contact@forstudy.space</p></a
+                  >
+                </address>
+              </li>
+            </ul>
+          </div>
+          <div class="copy-right">
+            <span>&copy; 2021 HLEGAL Law company, LLC</span>
+          </div>
         </div>
       </footer>
       <!-- footer -->

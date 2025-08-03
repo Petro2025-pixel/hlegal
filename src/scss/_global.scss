@@ -58,11 +58,20 @@
 		right: 20px;
 		background: #CACADB;
 	}
+	
 
 }
-// .main-holder{
-// 	padding-top: 176px;
-// }
+.main-holder{
+	padding-top: 87px;
+	// border: 1px solid rgb(255, 0, 179);
+	@media screen and (max-width: 767px) {
+	padding-top: 111px;
+		}
+	@media screen and (max-width: 1023px) {
+		padding-top: 148px;
+	}
+
+}
 .text-gradient {
 	color: transparent;
 	background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
