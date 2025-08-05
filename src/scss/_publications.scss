@@ -1,11 +1,18 @@
 .publications-wrapper{
     background-color: $gray-bg-color;
+
+@media screen and (min-width: 375px) {
+    .container{
+        padding: 0 30px;
+    }
+}
 }
 .publications{
     max-width: 1630px;
     margin: 0 auto;
+    padding: 25px 20px ;
     
-    padding: 25px 15px 25px 15px;
+    
 
     &__wrapper{
 
@@ -19,7 +26,7 @@
         @media screen and (min-width: 1024px) {
             display: flex;
             flex-wrap: wrap;
-            @include flex-spasing(3, 20px);
+            @include flex-spasing(3, 22px);
         }
 
     }
@@ -39,11 +46,13 @@
         }
 
     &__wrapper-img{
-
             height: 200px;
-            // width: 100%;
-            object-fit: contain;
             overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     &__wrapper-txt{
         padding: 30px;
@@ -54,54 +63,47 @@
             font-weight: 700;
             
         }
-        & h4{padding-bottom: 15px;
+        & h3{padding-bottom: 15px;
 
         }
         & a:hover {
             color: $accent-color;
             transition: color 0.3s ease;
         }
-        & span {
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: 700;
-            color: $gray-bg-text-color;
-            display: block;
-            padding-bottom: 30px;
-            
+        p {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 22px;
         }
-        & span::after{
-            content: "";
-            display: block;
-            top: 30px;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background-color:$gray-separator-color;
-            position: absolute;
-        }
+       
     }    
 }
-.title{
-    &__link{
-        text-decoration: none;
-        font-weight: 14px ;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $active-regular-color;
-        padding-top: 50px;
-     } 
-    &__link:hover{
-        color: $accent-color;
-        transition: color 0.3s ease;
-    } 
+.read-in-min{
+     position: relative;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 700;
+     color: $gray-bg-text-color;
+     display: block;
+     padding-bottom: 30px;
+ }
 
- &__text{
+.read-in-min::after {
+     content: "";
+     display: block;
+     top: 30px;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background-color: $gray-separator-color;
+     position: absolute;
+ }
+.title{
+     &__text{
      @include text-gradient;
      font-size: 38px;
      font-weight: 700;
-     padding-bottom: 20px;
-     padding-top: 10px;
+     margin-bottom: 20px;
+     margin-top: 10px;
      }
    }

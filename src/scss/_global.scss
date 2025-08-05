@@ -9,11 +9,7 @@
 	max-width: 1630px;
 	margin: 0 auto;
 	padding: 0 15px;
-	// @media screen and (min-width: 767px) {
-	// padding: 0 60px;	
-	// }
-
-}
+	}
 
 .minimum-hidden{
 	@media screen and (max-width: 767px) {
@@ -21,13 +17,7 @@
 	}
 
 }
-.minimum-transformed{
-	@media screen and (max-width: 767px) {
-	.header__logo img {
-		transform: scale(55%) translateX(-45px) translateY(14px);
-		}
-	}
-}
+
 
 .bg-gradient{
 	position: relative;
@@ -72,6 +62,21 @@
 	}
 
 }
+.services-holder {
+	max-width: 1630px;
+	margin: 0 auto;
+	padding: 87px 15px 0 15px;
+	// border: 1px solid rgb(255, 0, 179);
+
+	@media screen and (max-width: 767px) {
+		padding: 111px 15px 0 15px;
+	}
+
+	@media screen and (max-width: 1023px) {
+		padding: 148px 15px 0 15px;
+	}
+
+}
 .text-gradient {
 	color: transparent;
 	background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
@@ -81,4 +86,30 @@
 	color: $active-regular-color;
 	font-size: 14px;
 	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	&:hover{
+	color: $accent-color;
+	transition: color 0.3s ease;
+	}
+	&::after {
+	content: "";
+	width: 6px;
+	height: 6px;
+	border: solid $active-regular-color;
+	border-width: 2px 2px 0 0;
+	display: inline-block;
+	position: absolute;
+	right: -9px;
+	top: 6px;
+	transform: rotate(45deg);
+	}
+	&:hover:after {
+	border-color: $accent-color;
+	transition: border-color 0.3s ease;
+	}
+
 }
+

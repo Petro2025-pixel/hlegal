@@ -12,6 +12,8 @@ import '../scss/style.scss';
 
 const swiper = new Swiper('.swiper', {
   modules: [Pagination],
+  // slidesPerView: 4,
+  // spaceBetween: 30,
   pagination: {
       el: '.swiper-pagination',
   },
